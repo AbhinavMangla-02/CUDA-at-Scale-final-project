@@ -1,0 +1,36 @@
+CUDA Batch Image Processing Project - Install and Run
+=====================================================
+
+Prerequisites
+-------------
+1. Linux environment
+2. NVIDIA GPU with CUDA support
+3. CUDA toolkit (nvcc available in PATH)
+4. Python 3
+5. make
+
+Build and Run
+-------------
+From the repository root:
+
+1. chmod +x run.sh
+2. ./run.sh
+
+Manual Commands (optional)
+--------------------------
+1. Generate input dataset:
+   python3 src/generate_dataset.py --output data/input --count 200 --width 256 --height 256
+
+2. Build executable:
+   make
+
+3. Run processor:
+   ./bin/batch_image_processor data/input data/output
+
+Output Artifacts
+----------------
+1. Processed image files:
+   data/output/processed_*.pgm
+
+2. Execution proof log:
+   data/output/run_log.txt
