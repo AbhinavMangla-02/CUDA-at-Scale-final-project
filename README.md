@@ -9,13 +9,6 @@ It uses a custom CUDA kernel to run Sobel-like edge magnitude processing across 
 - **Large dataset included:** auto-generated synthetic dataset of **200 small images**
 - **Proof of execution included:** output images in `data/output/` and a run log in `data/output/run_log.txt`
 
-## Project Structure
-
-- `src/batchImageProcessor.cu` - CUDA program that loads all `.pgm` files, processes them on GPU, and writes outputs
-- `src/generate_dataset.py` - creates 200 grayscale `.pgm` input images
-- `run.sh` - end-to-end script (generate data, build, execute)
-- `data/input/` - generated input images
-- `data/output/` - processed images + execution log
 
 ## Quick Start
 
